@@ -20,3 +20,10 @@
 .App-link {
   color: #09d3ac;
 }
+
+.movies {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  width: 50%;
+}

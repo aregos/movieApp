@@ -1,9 +1,11 @@
 import React, {useState, useEffect} from 'react';
 import './App.css';
-import * as movies from './movies.json';
+import movies from './movies.json';
 
 function App() {
   const [search, changeSearch] = useState('');
+
+  console.log(movies);
 
   return (
     <div className="App">
@@ -13,6 +15,16 @@ function App() {
         </h1>
       </header>
       <input onChange={(event) => changeSearch(event.target.value)}/>
+      <div className="movies">
+        {movies.map(movie => {
+          return (
+            <div className="movie">
+              <div>{movie.title}</div>
+              <div>{movie.age}</div>
+            </div>
+          )
+        })}
+      </div>
     </div>
   );
 }
