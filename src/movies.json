@@ -1,7 +1,8 @@
 [
     {
         "title": "Iron Man",
-        "age": 2008
+        "age": 2008,
+        "image": "./images/iron_man1.jpg"
     },
     {
         "title": "Iron Man 2",
