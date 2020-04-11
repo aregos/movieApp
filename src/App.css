@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  max-width: 1140px;
+  margin: 0 auto;
 }
 
 .App-logo {
@@ -22,12 +24,15 @@
 }
 
 .movies {
-  display: flex;
+  display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: row;
   flex-direction: row;
-  align-content: center;
-  width: 100%;
+  flex-wrap: wrap;
 }
 
 .movie {
-  width: 100%;
+  -webkit-flex: auto;
+  flex: auto;
+  width: 33.3%;
 }

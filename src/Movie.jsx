@@ -2,7 +2,7 @@ import React from 'react';
 import './index.css';
 
 export function Movie(props) {
-    const {age, image, title} = props;
+    const {year, image, title} = props;
 
     return (
         <div className="movie">
@@ -12,7 +12,7 @@ export function Movie(props) {
             <div>
                 <img src={image} alt={title}/>
             </div>
-            <div>{age}</div>
+            <div>{year}</div>
         </div>
     )
 }
